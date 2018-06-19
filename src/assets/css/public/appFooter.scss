@@ -1,0 +1,142 @@
+@import "../global";
+
+.app-footer {
+  height: 200px;
+  width: 100%;
+  min-width: $inner-width;
+  position: relative;
+  background-color: $primary-color;
+  .wap-inner {
+    display: none;
+    .wap-inner-index {
+      height: 70px;
+      line-height: 80px;
+      span {
+        color: $orange-color;
+        font-weight: bold;
+      }
+    }
+    .container {
+      margin: 0 5%;
+      a {
+        display: inline-table;
+        width: 32%;
+        height: 40px;
+        color:white;
+        font-size: 12px;
+        font-weight: lighter;
+      }
+
+      .icp {
+        margin: 0 auto;
+        width: 110px;
+        & > a:active, & > a:link, & > a:visited {
+          color: #ffffff;
+        }
+        a {
+          font-size: 10px;
+          width: 100%;
+          height: 14px;
+          line-height: 14px;
+        }
+        color:white;
+        font-size: 12px;
+        font-weight: lighter;
+      }
+      .copyright {
+        margin: 0 auto;
+        width: 220px;
+        span {
+          font-size: 10px;
+          width: 100%;
+          height: 14px;
+          line-height: 14px;
+        }
+        color:white;
+        font-size: 12px;
+        font-weight: lighter;
+      }
+      .contact {
+        margin: 0 auto;
+        width: 210px;
+        span {
+          font-size: 10px;
+          width: 100%;
+          height: 14px;
+          line-height: 14px;
+        }
+        color:white;
+        font-size: 12px;
+        font-weight: lighter;
+      }
+    }
+  }
+
+  .inner {
+    width: 912px;
+    height: 108px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+    color: #ffffff;
+    cursor: pointer;
+    user-select: none;
+    .container {
+      a{color:white;}
+      & > span:nth-child(odd) {
+        color: #ffffff;
+      }
+      & > span:nth-child(even) {
+        color: $orange-color;
+        margin-left: 21px;
+        margin-right: 21px;
+      }
+    }
+    .icp {
+      bottom: 40px;
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin-left: auto;
+      margin-right: auto;
+      & > a:active, & > a:link, & > a:visited {
+        color: #ffffff;
+      }
+    }
+    .copyright {
+      bottom: 20px;
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .contact {
+      bottom: 0;
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+  }
+}
+
+@media only screen and (max-width: $max-width) {
+  .app-footer {
+    height: auto;
+    min-width: 0;
+    padding-bottom: 15px;
+    .inner {
+      display: none;
+    }
+    .wap-inner {
+      display: block;
+    }
+  }
+}

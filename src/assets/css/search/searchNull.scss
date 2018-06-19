@@ -1,0 +1,61 @@
+@import '../global';
+
+.search-null {
+  display: inline-block;
+  vertical-align: top;
+  width: 701px;
+  margin-left: 21px;
+  margin-right: 20px;
+  margin-bottom: 161px;
+  .null-container {
+    height: 360px;
+    width: 100%;
+    background-color: #ffffff;
+    position: relative;
+    .inner {
+      width: 90%;
+      //height: 100px;
+      margin: 0 auto;
+      .result {
+        font-size: 12px;
+        height: 50px;
+        line-height: 50px;
+        width: 100%;
+        span > span {
+          color: $orange-color;
+        }
+      }
+    }
+    .sorry {
+      height: 100px;
+      width: 165px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+      text-align: center;
+      svg {
+        height: 53px;
+        width: 46px;
+      }
+      .sorry-content {
+        width: 100%;
+        font-size: 20px;
+        margin-top: 25px;
+        span {
+          text-align: center;
+          color: #C8C8C8;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .search-null {
+    width: 100%;
+    margin: 0;
+  }
+}

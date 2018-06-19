@@ -1,0 +1,128 @@
+@import "../global";
+
+.paper-info {
+  .paper-info-wrapper {
+    width: 1270px;
+    height: auto;
+    margin: 0 auto;
+    .paper-info-left {
+      width: 300px;
+      margin-right: 20px;
+      background: white;
+      float: left;
+    }
+    .paper-info-center {
+      float: left;
+      width: 680px;
+      overflow: hidden;
+      .paper-info-header {
+        background: white;
+        box-shadow: 0 1px 1px $gray-color;
+        padding: 35px 20px 30px 20px;
+        .paper-info-title {
+          font-size: 22px;
+          height: 36px;
+          font-weight: 400;
+          color: $primary-color;
+        }
+        .paper-info-subtitle {
+          span {
+            font-size: 12px;
+            font-weight: bold;
+            margin-right: 8px;
+          }
+          .paper-info-btn {
+            cursor: pointer;
+            color: $orange-color;
+            border: 1px $orange-color solid;
+            padding: 1px 6px;
+            border-radius: 3px;
+          }
+        }
+
+        .paper-info-content {
+          margin-top: 18px;
+          font-size: 14px;
+          line-height: 22px;
+          color: #4A4A4A;
+        }
+      }
+
+      .paper-info-next {
+        cursor: pointer;
+        margin: 20px 0 50px 0;
+        background: white;
+        box-shadow: 0 1px 1px $gray-color;
+        padding-left: 20px;
+        height: 40px;
+        line-height: 40px;
+        span {
+          font-size: 14px;
+          font-weight: bold;
+          color: $primary-color;
+        }
+      }
+    }
+    .paper-info-right {
+      width: 250px;
+      margin-left: 20px;
+      float: left;
+      box-shadow: 0 1px 1px $gray-color;
+      background: white;
+      overflow: hidden;
+
+      .paper-info-magazine-bar {
+        padding: 0 15px;
+        font-size: 16px;
+        font-weight: 200;
+        line-height: 40px;
+        color: white;
+        background: $primary-color;
+      }
+
+      .paper-info-magazine-wrapper {
+        margin: 20px 0;
+      }
+    }
+  }
+}
+
+
+@media only screen and (max-width: $max-width) {
+  .paper-info {
+    .paper-info-wrapper {
+      width: 100%;
+
+      .paper-info-left {
+        width: 100%;
+        margin: 0;
+      }
+
+      .paper-info-center {
+        float: none;
+        width: 100%;
+        .paper-info-header {
+          .paper-info-title {
+            font-size: 18px;
+            height: 30px;
+          }
+
+        }
+      }
+      .paper-info-right {
+        float: none;
+        width: 100%;
+        margin: 0;
+        .paper-info-magazine-bar {
+          font-size: 14px;
+          line-height: 30px;
+        }
+
+        .paper-info-magazine-wrapper {
+          width: 30%;
+          margin: 20px auto;
+        }
+      }
+    }
+  }
+}

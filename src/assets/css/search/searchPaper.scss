@@ -1,0 +1,23 @@
+@import '../global';
+
+.search-paper {
+  display: inline-block;
+  vertical-align: top;
+  width: 701px;
+  margin-left: 21px;
+  margin-right: 20px;
+  font-size: 16px;
+  background-color: white;
+}
+
+@media only screen and (max-width: $max-width) {
+  .search-paper {
+    width: 100%;
+    margin: 0;
+    ul {
+      li {
+        padding: 0 2%;
+      }
+    }
+  }
+}

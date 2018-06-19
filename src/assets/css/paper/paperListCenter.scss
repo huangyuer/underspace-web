@@ -1,0 +1,18 @@
+@import "../global";
+.paper-list-center {
+  width: 100%;
+  ul {
+    li {
+    }
+  }
+}
+
+@media only screen and (max-width: $max-width) {
+  .paper-list-center {
+    ul {
+      li {
+        margin: 0 3%;
+      }
+    }
+  }
+}

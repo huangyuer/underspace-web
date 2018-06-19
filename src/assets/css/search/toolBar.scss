@@ -1,0 +1,80 @@
+@import '../global';
+
+.tool-bar {
+  height: 40px;
+  width: 100%;
+  background-color: $primary-color;
+  .inner {
+    width: 90%;
+    margin: 0 auto;
+    //background-color: red;
+    height: 100%;
+    .item {
+      margin-right: 30px;
+      display: inline-block;
+      vertical-align: middle;
+      span {
+        font-size: 14px;
+        display: inline-block;
+        vertical-align: middle;
+        height: 25px;
+        margin-top: 7.5555px;
+        line-height: 25px;
+        color: #ffffff;
+      }
+      .d-select {
+        position: relative;
+        font-size: 12px;
+        display: inline-block;
+        line-height: 25px;
+        vertical-align: middle;
+        width: 104px;
+        border-radius: 3px;
+        height: 25px;
+        margin-top: 7.5555px;
+        margin-left: 5px;
+        color: $orange-color;
+        span {
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          margin: auto;
+          color: $orange-color;
+          padding-left: 10px;
+          background-color: #ffffff;
+          border-radius: 3px;
+          z-index: 1;
+          font-size: 12px;
+        }
+        select {
+          border: none;
+          outline: none;
+          height: 100%;
+          width: 100%;
+          opacity: 0;
+          z-index: 2;
+          position: absolute;
+        }
+        svg {
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          height: 12px;
+          width: 12px;
+          margin-top: auto;
+          margin-bottom: auto;
+          right: 9px;
+          z-index: 2;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: $max-width) {
+  .tool-bar {
+    display: none;
+  }
+}

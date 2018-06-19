@@ -1,0 +1,629 @@
+/*注释*/
+  .footnote {
+    font-size: 0.80em;
+    line-height: 1.5em;
+    font-family: "";
+    text-indent: 2em;
+
+  }
+
+  /*封面*/
+  .cover {
+    height: 100%;
+
+  }
+
+  .book_li b {
+    display: inline;
+  }
+
+  .book_li p {
+    color: rgb(111, 111, 111);
+    font-size:16px;
+    line-height: 30px;
+    text-indent: 2em;
+    padding-top: 20px;
+  }
+ 
+  .book_li h1 {
+    font-size: 24px;
+    font-family: "";
+    margin-bottom: 1em;
+    margin-top: 1em;
+    text-align: center;
+    font-weight: normal;
+    color: #009264;
+
+  }
+
+  /*一级标题*/
+  /*二级标题*/
+  .book_li  p  h2 {
+    font-size: 22px;
+    font-family: "";
+    font-weight: normal;
+    margin-bottom: 2em; 
+    margin-top: 2em;
+    text-align: center; 
+  }
+
+  /*二级标题*/
+  /*三级标题*/
+  .book_li h3 {
+    font-size: 18px;
+    font-family: "";
+    font-weight: normal;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    color: #009264;
+
+  }
+
+  /*三级标题*/
+  /*四级标题*/
+  .book_li h4 {
+    font-size: 1em;
+    font-family: "";
+    font-weight: normal;
+    margin-top: 1em;
+    margin-bottom: 1em;
+
+  }
+
+  /*四级标题*/
+
+  /*书名页*/
+  .tg-title {
+    font-size: 2.5em;
+    font-family: "";
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+    text-align: center;
+    font-weight: normal;
+
+  }
+
+  /*书名页*/
+  .tg-vtitle {
+    font-size: 1.8em;
+    font-family: "";
+    margin-bottom: 2em;
+    margin-top: 0em;
+    text-align: center;
+    font-weight: normal;
+
+  }
+
+  /*书名页副书名*/
+  .tg-author {
+    font-size: 1.6em;
+    font-family: "";
+    margin-top: 1em;
+    margin-bottom: 0em;
+    text-align: center;
+    font-weight: normal;
+
+  }
+
+  .tg-pub {
+    font-size: 1.4em;
+    font-family: "";
+    margin-top: 4em;
+    text-align: center;
+    font-weight: normal;
+
+  }
+
+  /**/
+
+  /*版权页*/
+  /**/
+  .copyright {
+    font-size: 1em;
+    line-height: 1.5em;
+    font-family: "song";
+
+  }
+
+  /*目录页*/
+  .contents-title {
+    font-size: 2em;
+    font-family: "";
+    margin-bottom: 1em;
+    margin-top: 1em;
+    text-align: center;
+    font-weight: normal;
+
+  }
+
+  /*目录一级标题*/
+  .contents1 {
+    font-size: 0.85em;
+    margin-left: 0em;
+    font-family: "";
+    line-height: 1.5em;
+    text-align: justify;
+    margin-bottom: 0em;
+  }
+
+  /*目录二级标题*/
+  .contents2 {
+    font-size: 0.85em;
+    margin-left: 1em;
+    font-family: "";
+    line-height: 1.5em;
+    text-align: justify;
+    margin-bottom: 0em;
+  }
+
+  /*目录三级标题*/
+  .contents3 {
+    font-size: 0.85em;
+    margin-left: 2em;
+    font-family: "";
+    line-height: 1.5em;
+    text-align: justify;
+    margin-bottom: 0em;
+  }
+
+  /*目录四级标题*/
+  .contents4 {
+    font-size: 0.85em;
+    margin-left: 3em;
+    font-family: "";
+    line-height: 1.5em;
+    text-align: justify;
+    margin-bottom: 0em;
+  }
+
+  /*目录五级标题*/
+  .contents5 {
+    font-size: 0.85em;
+    margin-left: 4em;
+    font-family: "";
+    line-height: 1.5em;
+    text-align: justify;
+    margin-bottom: 0em;
+  }
+
+  p {
+    font-size: 1em;
+    font-family: "";
+    text-align: justify;
+    text-indent: 2em;
+    line-height: 1.5em;
+    margin-top: 0px;
+    margin-bottom: 0px;
+
+  }
+
+  /*正文*/
+  .special {
+    font-size: 1.0000em;
+    line-height: 1.4em;
+    font-family: "";
+    text-indent: 2em;
+
+  }
+
+  /*特殊正文字体是楷体*/
+
+  /*附注标题*/
+  .fnote-title {
+    font-size: 1em;
+    font-family: "";
+    text-indent: 0em;
+    line-height: 1.5em;
+    margin-top: 2em;
+    font-weight: bold;
+    text-align: justify;
+
+  }
+
+  /*附注标题*/
+  .fnote {
+    font-size: 0.8em;
+    font-family: "";
+    line-height: 1.4em;
+    text-indent: 0em;
+    text-align: justify;
+
+  }
+
+  /*注解内容*/
+  /*图说*/
+  .grap {
+    font-size: 0.8em;
+    line-height: 1.4em;
+    font-family: "";
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+  }
+
+  /*图说*/
+  .grap-1 {
+    font-size: 0.8em;
+    font-family: "";
+    text-align: justify;
+    line-height: 1.4em;
+    text-indent: 2em;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+  }
+
+  /*图说*/
+  /*图片*/
+  .pic {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+  }
+
+  /*居中*/
+  /**/
+  /*图片*/
+  .pic-float-l {
+    float: left;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-left: 0px;
+
+  }
+
+  /*居左绕文*/
+  /*图片*/
+  .pic-float-r {
+    float: right;
+    margin-top: 10px;
+    margin-right: 0px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+
+  }
+
+  /*居右绕文*/
+  /*图片*/
+  .pic-l {
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 2em;
+
+  }
+
+  /*居左不绕文*/
+  /*图片*/
+  .pic-r {
+    text-align: right;
+    margin-top: 10px;
+    margin-right: 0px;
+    margin-bottom: 10px;
+
+  }
+
+  /*居右不绕文*/
+
+  /*表注*/
+  .bzh {
+    font-size: 0.8em;
+    line-height: 1.4em;
+    font-family: "";
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 10px;
+
+  }
+
+  /*表注*/
+  .bzh1 {
+    font-size: 0.8em;
+    font-family: "";
+    text-align: justify;
+    line-height: 1.4em;
+    text-indent: 2em;
+    margin-top: 0px;
+    margin-bottom: 10px;
+
+  }
+
+  /*表注*/
+  .bzh2 {
+    font-size: 0.8em;
+    line-height: 1.4em;
+    font-family: "";
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 0px;
+
+  }
+
+  /*表注*/
+  .bzh3 {
+    font-size: 0.8em;
+    font-family: "";
+    text-align: justify;
+    line-height: 1.4em;
+    text-indent: 2em;
+    margin-top: 10px;
+    margin-bottom: 0px;
+
+  }
+
+  /*表注*/
+  .bdrtop {
+    border-top: 1px solid black;
+
+  }
+
+  .bdrbottom {
+    border-bottom: 1px solid black;
+
+  }
+
+  .bdrleft {
+    border-left: 1px solid black;
+
+  }
+
+  .bdrright {
+    border-right: 1px solid black;
+
+  }
+
+  /*底图背景*/
+  .bg-picture {
+    background-repeat: no-repeat;
+
+  }
+
+  /*项目符号*/
+  ul.disc {
+    list-style-type: disc;
+
+  }
+
+  /*项目编号：实心圆*/
+  ul.circle {
+    list-style-type: circle;
+
+  }
+
+  /*项目编号：空心*/
+  ul.square {
+    list-style-type: square;
+
+  }
+
+  /*项目编号：方框*/
+  ol.decimal {
+    list-style-type: decimal;
+
+  }
+
+  /*项目编号：数字*/
+  ol.upper-roman {
+    list-style-type: upper-roman;
+
+  }
+
+  /*项目编号：大写罗马数字*/
+  ol.lower-roman {
+    list-style-type: lower-roman;
+
+  }
+
+  /*项目编号：小写罗马数字*/
+  ol.upper-alpha {
+    list-style-type: upper-alpha;
+
+  }
+
+  /*项目编号：大写希腊字母*/
+  ol.lower-alpha {
+    list-style-type: lower-alpha;
+
+  }
+
+  /*项目编号：小写希腊字母*/
+
+  hr {
+    width: 100%;
+    color: "#000000";
+    size: "1px";
+
+  }
+
+  /*组合样式*/
+  .bgcolor {
+    background-color: #EEEEEE;
+
+  }
+
+  /*背景颜色*/
+  /**/
+  .left {
+    text-align: left;
+
+  }
+
+  /*居左*/
+  /**/
+  .right {
+    text-align: right;
+
+  }
+
+  /*居右*/
+  /**/
+  .center {
+    text-align: center;
+
+  }
+
+  /*居中*/
+  /**/
+  .marg-top0 {
+    margin-top: 0em;
+
+  }
+
+  /*上边距为0*/
+  /**/
+  .marg-top1 {
+    margin-top: 1em;
+
+  }
+
+  /*上边距为1*/
+  /**/
+  .marg-top2 {
+    margin-top: 2em;
+
+  }
+
+  /*上边距为2*/
+  /**/
+  .marg-bottom0 {
+    margin-bottom: 0em;
+
+  }
+
+  /*下边距为0*/
+  /**/
+  .marg-bottom1 {
+    margin-bottom: 1em;
+
+  }
+
+  /*下边距为1*/
+  /**/
+  .marg-bottom2 {
+    margin-bottom: 2em;
+
+  }
+
+  /*下边距空2*/
+  /**/
+  .marg-left0 {
+    margin-left: 0em;
+
+  }
+
+  /*左边距为0*/
+  /**/
+  .marg-left1 {
+    margin-left: 1em;
+
+  }
+
+  /*左边距为1*/
+  /**/
+  .marg-right1 {
+    margin-right: 1em;
+
+  }
+
+  /*右边距空1*/
+  /**/
+  .marg-left2 {
+    margin-left: 2em;
+
+  }
+
+  /*左边距为2*/
+  .marg-left3 {
+    margin-left: 3em;
+
+  }
+
+  /*左边距为2*/
+  .marg-left4 {
+    margin-left: 4em;
+
+  }
+
+  /*左边距为2*/
+  .marg-left5 {
+    margin-left: 5em;
+
+  }
+
+  /*左边距为2*/
+  /**/
+  .marg-right2 {
+    margin-right: 2em;
+
+  }
+
+  /*右边距空2*/
+  /**/
+  .marg-right3 {
+    margin-right: 3em;
+
+  }
+
+  /*右边距空3*/
+  /**/
+  .marg-right4 {
+    margin-right: 4em;
+
+  }
+
+  /*右边距空4*/
+  /**/
+  .noindent {
+    text-indent: 0em;
+
+  }
+
+  /*正文不空两字*/
+  /**/
+  .strong {
+    font-weight: bold;
+
+  }
+
+  /*加粗*/
+  .songti {
+    font-family: "songti";
+
+  }
+
+  /*宋体*/
+  .heiti {
+    font-family: "heiti";
+    font-weight: normal;
+
+  }
+
+  /*黑体*/
+  .kaiti {
+    font-family: "kaiti";
+
+  }
+
+  /*楷体*/
+  /**/
+  .indent {
+    text-indent: 2em;
+
+  }
+
+  /*缩进2个字*/
+
+  .yinwen {
+    font-size: 0.9em;
+    text-indent: 2em;
+    margin-left: 2em;
+    line-height: 1.4em;
+    font-family: "";
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 2em;
+  }

@@ -1,0 +1,4 @@
+<v-editor
+:content="content"
+:path="path"
+v-model="result"></v-editor>

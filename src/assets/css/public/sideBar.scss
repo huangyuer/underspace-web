@@ -1,0 +1,98 @@
+@import "../global";
+.sidebar {
+  overflow: hidden;
+  /*Hiding the checkbox*/
+  #sidebar {
+    display: none;
+  }
+  /*Nav styles*/
+  .sidenav {
+    opacity: 0;
+    background: $primary-color;
+    width: 70%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    overflow-x: hidden;
+    /*overflow-y: hidden;*/
+    .top-bar {
+      height: 60px;
+      line-height: 60px;
+      box-sizing: border-box;
+      border-right: outset white 1px;
+      .back-index {
+        color: $orange-color;
+        float: left;
+        margin-left: 20px;
+        font-size: 16px;
+      }
+      .about-us {
+        color: $orange-color;
+        float: right;
+        margin-right: 20px;
+        font-size: 12px;
+        text-decoration: underline;
+      }
+    }
+    b {
+      display: block;
+      color: white;
+      font-size: 14px;
+      height: 45px;
+      line-height: 45px;
+      font-weight: lighter;
+      opacity: 0;
+      transform: translateX(50px);
+      transition: all 0.5s;
+    }
+    .side-item {
+      margin-left: 30px;
+    }
+    li {
+      .sign-container {
+        margin: 0 20px;
+        .btn1 {
+          margin: 20px 0;
+          display: block;
+          background-color: white;
+          text-align: center;
+          height: 26px;
+          line-height: 26px;
+          border-radius: 13px;
+          span {
+            color: $primary-color;
+            font-size: 14px;
+          }
+        }
+        .btn2 {
+          margin: 20px 0;
+          display: block;
+          background-color: $orange-color;
+          text-align: center;
+          height: 26px;
+          line-height: 26px;
+          border-radius: 13px;
+          span {
+            color: white;
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*Animate links from right to left + fade in effect*/
+#sidebar:checked ~ .sidenav {opacity: 1; transform: translateX(0);}
+#sidebar:checked ~ .sidenav b {opacity: 1; transform: translateX(0);}
+
+/*Adding delay to link animation - in multiples of .08s*/
+/*One can use jQuery also for creating the delayed effect. But I will stick to manual CSS for this walkthrough.*/
+#sidebar:checked ~ .sidebar .sidenav li:nth-child(1) {transition-delay: 0.08s;}
+#sidebar:checked ~ .sidebar .sidenav li:nth-child(2) {transition-delay: 0.16s;}
+#sidebar:checked ~ .sidebar .sidenav li:nth-child(3) {transition-delay: 0.24s;}
+#sidebar:checked ~ .sidebar .sidenav li:nth-child(4) {transition-delay: 0.32s;}
+#sidebar:checked ~ .sidebar .sidenav li:nth-child(5) {transition-delay: 0.40s;}
+#sidebar:checked ~ .sidebar .sidenav li:nth-child(6) {transition-delay: 0.48s;}
+#sidebar:checked ~ .sidebar .sidenav li:nth-child(7) {transition-delay: 0.56s;}

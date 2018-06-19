@@ -1,0 +1,54 @@
+@import "../global";
+
+.book_list {
+  background-color: #f9f9f9;
+  .book_list_main {
+    width: 1240px;
+    margin:0 auto;
+    .main_left{
+      float: left;
+      width: 660px;
+      background-color: #fff;
+      margin-left: 20px;
+      .list_cent{
+        width: 660px;
+        float: left;
+        .list_center{
+          width: 586px;
+          margin:0 auto;
+          .list_count {
+            color: #9a9a9a;
+            font-size: 12px;
+            margin: 15px 0 0 12px;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+@media only screen and (max-width: $max-width) {
+  .book_list{
+    .book_list_main{
+      width: 100%;
+      .main_left{
+        float: none;
+        width: auto;
+        background-color: #fff;
+        margin:0;
+        overflow: hidden;
+        .list_cent{
+          width: 100%;
+          float: none;
+          .list_center{
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}

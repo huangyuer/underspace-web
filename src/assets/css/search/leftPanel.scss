@@ -1,0 +1,15 @@
+@import "../global";
+
+.left-panel {
+  width: 280px;
+  font-size: 16px;
+  display: inline-block;
+  vertical-align: top;
+
+}
+
+@media only screen and (max-width: 768px) {
+  .left-panel {
+    display: none;
+  }
+}

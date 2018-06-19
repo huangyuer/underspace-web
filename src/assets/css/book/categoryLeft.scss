@@ -1,0 +1,82 @@
+@import "../global";
+
+.list_left {
+  width: 280px;
+  float: left;
+  background: #ededed !important;
+  .web-book-category {
+    max-height: 1024px;
+    overflow: scroll;
+    overflow-x: hidden;
+  }
+  .wap-book-category {
+    position: absolute;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 0, 0, .6);
+    width: 100%;
+    overflow: scroll;
+    font-size: 12px;
+    .class-title {
+      height: 40px;
+      background-color: $primary-color;
+      line-height: 40px;
+      font-size: 16px;
+      color: white;
+      span{
+        margin: 0 20px;
+      }
+      .title-img-close {
+        float: right;
+        width: 15px;
+        height: 15px;
+        margin: 2px 20px 0 0;
+        a {
+          img {
+            width: 15px;
+            height: 15px;
+          }
+        }
+      }
+    }
+  }
+  .class_title {
+    height: 40px;
+    background-color: $primary-color;
+    line-height: 40px;
+    font-size: 16px;
+    color: white;
+    span{
+      margin: 0 20px;
+    }
+    ul {
+      margin: 10px 15px;
+      li {
+        float: left;
+        color: $primary-color;
+      }
+    }
+    .title_img {
+      float: right;
+      span {
+        color: #fff;
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: $max-width) {
+  .list_left {
+    .class_title {
+      display: none;
+    }
+    .web-book-category {
+      display: none;
+    }
+  }
+}
+

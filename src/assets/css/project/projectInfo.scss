@@ -1,0 +1,111 @@
+@import "../global";
+
+.project_info_wrapper {
+  .project_info{
+    margin: 20px auto;
+    width: 1100px;
+    .project_info_left {
+      width: 800px;
+      float: left;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 8px $gray-color;
+      -webkit-box-shadow: 0 2px 8px $gray-color;
+      h4 {
+        color: #009264;
+        font-size: 1.5em;
+        line-height: 2em;
+        font-family: "";
+        font-weight: normal;
+        margin-bottom: 1em;
+        text-align: center;
+      }
+      .project_content {
+        display: block;
+        color: rgb(111, 111, 111);
+        font-size:16px;
+        font-weight: 200;
+        line-height: 30px;
+        text-indent: 2em;
+        padding-top: 10px;
+      }
+    }
+    .project_info_right {
+      width: 200px;
+      margin-left: 20px;
+      padding: 20px;
+      display: inline-block;
+      box-shadow: 0 2px 8px $gray-color;
+      -webkit-box-shadow: 0 2px 8px $gray-color;
+      h4 {
+        span {
+          color: $orange-color;
+          font-size: 14px;
+        }
+      }
+      h5 {
+        margin: 20px 0;
+        font-size: 12px;
+        height: 20px;
+        span{
+          font-size: 12px;
+          height: 14px;
+          line-height: 14px;
+          vertical-align: middle;
+        }
+        img {
+          width: auto;
+          height: 14px;
+          vertical-align: middle;
+        }
+      }
+      p {
+        margin: 10px 0;
+        font-size: 14px;
+        font-weight: 400;
+      }
+      .project_info_right_img {
+        margin: 30px 0;
+        width: 150px;
+        img {
+          margin: 30px 0;
+          width: 150px;
+        }
+      }
+      .print {
+        width: 90px;
+        background-color: #E37423;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        border-radius: 3px;
+        user-select: none;
+        color: white;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: $max-width) {
+  .project_info_wrapper {
+    .project_info {
+      width: 100%;
+      .project_info_left {
+        width: 90%;
+        padding: 5%;
+        h3 {
+          font-size: 1.2em;
+          line-height: 1.8em;
+          margin-bottom: 0;
+        }
+        .project_content {
+          font-size: 14px;
+          line-height: 20px;
+        }
+      }
+      .project_info_right {
+        display: none;
+      }
+    }
+  }
+}

@@ -1,0 +1,126 @@
+@import '../global';
+
+.image-item {
+  height: 237px;
+  display: inline-block;
+  width: 200px;
+  border: 1px solid #eeeeee;
+  .img-container {
+    cursor: pointer;
+    height: 130px;
+    width: 100%;
+    background-color: #D8D8D8;
+    img {
+      height: 100%;
+      width: 100%;
+    }
+  }
+  .content {
+    height: 91px;
+    padding: 8px;
+    .inner {
+      height: 100%;
+      width: 100%;
+      .title {
+        font-size: 14px;
+        color: $primary-color;
+        font-weight: bold;
+        height: 20px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        cursor: pointer;
+      }
+      .text {
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        font-size: 12px;
+        color: #4A4A4A;
+        height: 34px;
+        //background-color: red;
+        overflow: hidden;
+        word-wrap: break-word;
+        span p span {
+          color: red;
+        }
+        span {
+          & span {
+            color: red;
+          }
+        }
+      }
+      .underline {
+        width: 100%;
+        background-color: #D8D8D8;
+        height: 1px;
+        margin-top: 8px;
+        margin-bottom: 6px;
+      }
+      .tool-bar {
+        font-size: 10px;
+        svg {
+          height: 14px;
+          width: 14px;
+        }
+        span {
+          display: inline-block;
+          height: 14px;
+          line-height: 14px;
+          margin-left: 6px;
+          cursor: pointer;
+          user-select: none;
+        }
+      }
+      .wap-tool-bar {
+        display: none;
+        font-size: 10px;
+        svg {
+          height: 12px;
+          width: 12px;
+        }
+        span {
+          display: inline-block;
+          margin-left: 2px;
+          cursor: pointer;
+          user-select: none;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: $max-width) {
+  .image-item {
+    width: 32%;
+    height: auto;
+    .img-container {
+      height: 80px;
+    }
+    .content {
+      padding: 3px;
+      .inner {
+        .title {
+          font-size: 12px;
+          height: 16px;
+          line-height: 16px;
+        }
+        .text {
+          font-size: 10px;
+          height: 42px;
+          -webkit-line-clamp: 3;
+        }
+        .underline {
+          margin: 5px 0;
+        }
+
+        .tool-bar {
+          display: none;
+        }
+        .wap-tool-bar {
+          display: block;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,130 @@
+@import "../global";
+
+.literature_wrapper {
+  overflow: hidden;
+
+  .literature_list_wrapper {
+    /*background: #fafafa;*/
+    margin: 20px;
+    .literature_list {
+      margin: 40px auto;
+      .wap_literature_header {
+        display: none;
+        margin: 0 5%;
+        height: 27px;
+        line-height: 27px;
+        .wap_literature_header_left {
+          float: left;
+          img {
+            width: 20px;
+            height: 20px;
+          }
+          span {
+            font-size: 14px;
+            height: 27px;
+            line-height: 27px;
+          }
+        }
+        .wap_literature_header_right {
+          float: right;
+          a {
+            span {
+              color: #4A4A4A;
+              font-size: 12px;
+              height: 27px;
+              line-height: 27px;
+            }
+          }
+        }
+      }
+      .literature_list_left {
+        width: 160px;
+        height: 240px;
+        float: left;
+        color: $primary-color;
+        text-align: left;
+        box-shadow: 0 2px 8px $gray-color;
+        -webkit-box-shadow: 0 2px 8px $gray-color;
+        .literature_list_left_img {
+          width: 36px;
+          margin: 33px auto 8px;
+          img {
+            position: relative;
+          }
+        }
+        h4 {
+          text-align: center;
+          font-size: 14px;
+        }
+        p {
+          font-size: 12px;
+          margin: 15px;
+        }
+      }
+
+      .literature_list_right {
+        overflow: hidden;
+        ul {
+          li {
+            float: left;
+            margin: 0 0 15px 15px;
+          }
+        }
+        .list_all {
+          float: left;
+          width: 100px;
+          margin: 0 auto;
+          text-align: center;
+          font-size: 16px;
+          p {
+            color: #4A4A4A;
+          }
+          .list_all_btn {
+            width: 70px;
+            height: 70px;
+            margin: 15px;
+            line-height: 70px;
+            background: #fff;
+            color: $orange-color !important;
+            border-radius: 35px;
+            box-shadow: 0 2px 8px $gray-color;
+            -webkit-box-shadow: 0 2px 8px $gray-color;
+            &:hover {
+              box-shadow: 5px 5px 15px $gray-color;
+              -webkit-box-shadow: 5px 5px 15px $gray-color;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: $max-width) {
+  .literature_wrapper {
+    .literature_list_wrapper {
+      margin: 20px 5%;
+      .literature_list {
+        margin: 0 auto;
+        .wap_literature_header {
+          display: block;
+        }
+        .literature_list_left {
+          display: none;
+        }
+        .literature_list_right {
+          width: 100%;
+          ul {
+            li {
+              //width: 100%;
+              margin: 10px 5px;
+            }
+          }
+          .list_all {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,20 @@
+@import "../global";
+
+.gap {
+  height: 22px;
+}
+.inner {
+  width: $inner-width;
+  min-width: $inner-width;
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: $max-width) {
+  .gap {
+    height: 30px;
+  }
+  .inner {
+    width: 100%;
+    min-width: 0;
+  }
+}

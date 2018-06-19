@@ -1,0 +1,86 @@
+@import "../global";
+
+.paper-item {
+  margin: 12px auto;
+  img {
+    width: 120px;
+    height: 175px;
+  }
+  .paper-title {
+    color: #000;
+    font-size: 16px;
+    height: 30px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font-weight: bold;
+  }
+
+  .paper-subtitle {
+    font-size: 12px;
+    width: 100%;
+    height: 22px;
+    line-height: 22px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    .paper-category {
+      color: $orange-color;
+      border: 1px $orange-color solid;
+      padding: 1px 3px;
+      margin-right: 2px;
+      border-radius: 3px;
+    }
+    .paper-publish-id {
+      color: white;
+      background-color: #a1a1a1;
+      border-radius: 3px;
+      padding: 1px 3px;
+    }
+    span {
+      color: #666666;
+      margin-right: 2px;
+    }
+  }
+
+  .paper-summary {
+    margin: 10px 0;
+    font-size: 12px;
+    line-height: 18px;
+    color: #666666;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+  }
+
+  .paper-keyword {
+    margin-bottom: 10px;
+    font-size: 12px;
+    line-height: 18px;
+    color: $primary-color;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    span {
+      margin-right: 2px;
+    }
+  }
+
+  .paper-item-btn-group {
+    margin: 10px 0 15px 0;
+    span {
+      font-size: 12px;
+      //cursor: pointer;
+      color: $orange-color;
+      border: 1px $orange-color solid;
+      padding: 1px 6px;
+      margin-right: 5px;
+      border-radius: 3px;
+    }
+  }
+
+  .paper-divider {
+    border-bottom: 1px solid #d8d8d8;
+  }
+}

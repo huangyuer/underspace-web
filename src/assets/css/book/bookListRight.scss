@@ -1,0 +1,15 @@
+@import "../global";
+
+.list_right{
+  width: 280px;
+  float: right;
+  img {
+    float: right
+  }
+}
+
+@media only screen and (max-width: $max-width) {
+  .list_right {
+    display: none;
+  }
+}

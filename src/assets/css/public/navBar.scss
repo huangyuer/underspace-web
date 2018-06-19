@@ -1,0 +1,20 @@
+@import "../global";
+.nav-bar {
+  display: block;
+  width: $inner-width;
+  min-width: $inner-width;
+  margin: 12px auto;
+}
+.activated {
+  color: $primary-color !important;
+  font-size: 14px;
+}
+.activated:hover {
+  text-decoration: underline;
+}
+
+@media only screen and (max-width: $max-width) {
+  .nav-bar {
+    display: none;
+  }
+}

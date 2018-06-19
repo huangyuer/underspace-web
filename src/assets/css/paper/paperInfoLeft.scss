@@ -1,0 +1,46 @@
+@import "../global";
+
+.paper-info-left-wrapper {
+  width: 100%;
+  .paper-info-menu-bar {
+    padding: 0 15px;
+    font-size: 16px;
+    font-weight: 200;
+    line-height: 40px;
+    color: white;
+    background: $primary-color;
+  }
+  ul {
+    box-shadow: 0 1px 1px $gray-color;
+    li {
+      height: 40px;
+      a {
+        display: inline-block;
+        width: 270px;
+        padding:0 15px;
+        font-size: 14px;
+        font-weight: 300;
+        height: 40px;
+        line-height: 40px;
+        color: #4A4A4A;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        border-bottom: 1px #d9d9d9 solid;
+        &:hover {
+          color: $primary-color;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: $max-width) {
+  .paper-info-left-wrapper {
+    width: 100%;
+    .paper-info-menu-bar {
+      font-size: 14px;
+      line-height: 30px;
+    }
+  }
+}

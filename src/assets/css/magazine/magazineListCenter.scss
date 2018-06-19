@@ -1,0 +1,23 @@
+@import "../global";
+.magazine-list-center {
+  width: 100%;
+  ul {
+    width: 100%;
+    li {
+      float: left;
+      width: 25%;
+    }
+  }
+}
+
+@media only screen and (max-width: $max-width) {
+  .magazine-list-center {
+    ul {
+      width: 90%;
+      margin: 0 5%;
+      li {
+        width: 33.33%;
+      }
+    }
+  }
+}

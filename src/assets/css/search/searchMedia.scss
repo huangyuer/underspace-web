@@ -1,0 +1,57 @@
+@import '../global';
+
+.search-media {
+  display: inline-block;
+  vertical-align: top;
+  background-color: white;
+  width: 701px;
+  margin-left: 21px;
+  margin-right: 20px;
+  font-size: 16px;
+  .inner {
+    width: 90%;
+    //height: 100px;
+    margin: 0 auto;
+    .result {
+      font-size: 12px;
+      height: 50px;
+      line-height: 50px;
+      width: 100%;
+      span > span {
+        color: $orange-color;
+      }
+      & + .image-text-item {
+        margin-top: 0;
+      }
+    }
+    .row {
+      overflow: hidden;
+      position: relative;
+      margin-top: 30px;
+
+      & > .image-item:last-child {
+        float: right;
+      }
+      & > .image-item:nth-child(2) {
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      & > .image-item:first-child {
+        float: left;
+      }
+    }
+    .result + .row {
+      margin-top: 0;
+    }
+  }
+}
+
+@media only screen and (max-width: $max-width) {
+  .search-media {
+    width: 100%;
+    margin: 0;
+  }
+}

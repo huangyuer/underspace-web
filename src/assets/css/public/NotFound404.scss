@@ -1,0 +1,23 @@
+@import '../global';
+
+.not-found {
+  height: 743px;
+  width: 100%;
+  position: relative;
+  z-index:-1;
+  background-color: white;
+  .img-container {
+    height: 138px;
+    width: 738px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    img {
+      height: 100%;
+      width: 100%;
+    }
+  }
+}

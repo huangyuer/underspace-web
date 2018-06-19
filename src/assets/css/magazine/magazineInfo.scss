@@ -1,0 +1,223 @@
+@import "../global";
+
+.magazine-info {
+  .magazine-info-wrapper {
+    width: 1240px;
+    height: auto;
+    margin: 0 auto;
+    .magazine-info-left {
+      float: left;
+      width: 923px;
+      box-shadow: 0 1px 1px $gray-color;
+      background: white;
+      overflow: hidden;
+      .magazine-info-header {
+        margin: 15px;
+        .magazine-info-title {
+          font-size: 20px;
+          height: 36px;
+          font-weight: bold;
+          color: $primary-color;
+        }
+        img {
+          float: left;
+          width: 146px;
+          height: 203px;
+        }
+        .magazine-info-detail {
+          margin-left: 161px;
+          font-size: 14px;
+          p {
+            height: 22px;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            span {
+              color: $primary-color;
+            }
+            span:nth-child(2) {
+              font-weight: 300;
+              color: #000;
+            }
+          }
+
+          .magazine-info-brief {
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 2;
+            overflow: hidden;
+            span {
+              color: $primary-color;
+            }
+            span:nth-child(2) {
+              font-weight: 300;
+              color: #000;
+            }
+          }
+
+          .magazine-info-btn-group {
+            margin: 10px 0;
+            span {
+              cursor: pointer;
+              color: $orange-color;
+              border: 1px $orange-color solid;
+              padding: 1px 6px;
+              margin-right: 5px;
+              border-radius: 3px;
+            }
+          }
+        }
+      }
+
+      .magazine-info-menu-bar {
+        margin: 30px auto 10px;
+        padding: 0 15px;
+        font-size: 16px;
+        font-weight: 200;
+        line-height: 40px;
+        color: white;
+        background: $primary-color;
+      }
+
+      ul {
+        li {
+          margin: 15px 18px;
+          overflow: hidden;
+          .magazine-info-menu-title {
+            margin: 15px auto;
+            font-size: 16px;
+            color: $primary-color;
+            cursor: pointer;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+          }
+          .magazine-info-menu-info {
+            font-size: 14px;
+            font-weight: 300;
+            color: #4A4A4A;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 2;
+            overflow: hidden;
+          }
+        }
+      }
+    }
+    .magazine-info-right {
+      width: 305px;
+      float: right;
+      box-shadow: 0 1px 1px $gray-color;
+      background: white;
+
+      .magazine-info-similar-bar {
+        padding: 0 15px;
+        font-size: 16px;
+        font-weight: 200;
+        line-height: 40px;
+        color: white;
+        background: $primary-color;
+      }
+
+      ul {
+        li {
+          width: 50%;
+          float: left;
+          margin: 0 auto;
+          .magazine-info-similar-item {
+            margin: 20px auto 0;
+            text-align: center;
+            img {
+              width: 120px;
+            }
+            span {
+              font-size: 13px;
+              font-weight: 300;
+              line-height: 30px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@media only screen and (max-width: $max-width) {
+  .magazine-info {
+    .magazine-info-wrapper {
+      width: 100%;
+      .magazine-info-left {
+        float: none;
+        width: 100%;
+        .magazine-info-header {
+          .magazine-info-title {
+            font-size: 18px;
+            height: 30px;
+          }
+          img {
+            width: 140px;
+            height: auto;
+          }
+          .magazine-info-detail {
+            margin-left: 155px;
+            font-size: 12px;
+            p {
+              height: 20px;
+              span:nth-child(2) {
+                font-size: 11px;
+              }
+            }
+            .magazine-info-brief {
+              -webkit-line-clamp: 3;
+              span:nth-child(2) {
+                font-size: 11px;
+              }
+            }
+
+            .magazine-info-btn-group {
+              font-size: 11px;
+            }
+          }
+        }
+
+        .magazine-info-menu-bar {
+          font-size: 14px;
+          line-height: 30px;
+        }
+
+        ul {
+          li {
+            margin: 5px 18px;
+            .magazine-info-menu-title {
+              font-size: 14px;
+              margin: 10px auto 5px;
+            }
+            .magazine-info-menu-info {
+              font-size: 13px;
+            }
+          }
+        }
+      }
+      .magazine-info-right {
+        float: none;
+        width: 100%;
+        .magazine-info-similar-bar {
+          font-size: 14px;
+          line-height: 30px;
+        }
+        ul {
+          li {
+            width: 25%;
+            margin: auto 4.166%;
+            .magazine-info-similar-item {
+              img {
+                width: 100%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

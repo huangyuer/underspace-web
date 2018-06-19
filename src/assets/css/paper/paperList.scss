@@ -1,0 +1,54 @@
+@import "../global";
+
+.paper-list {
+  background-color: #f9f9f9;
+  .paper-list-wrapper {
+    width: 1240px;
+    margin:0 auto;
+    .paper-left{
+      float: left;
+      width: 660px;
+      background-color: #fff;
+      margin-left: 20px;
+      .list-cent{
+        width: 660px;
+        float: left;
+        .list-center{
+          width: 586px;
+          margin:0 auto;
+          .list-count {
+            color: #9a9a9a;
+            font-size: 12px;
+            margin: 15px 0 0 12px;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+@media only screen and (max-width: $max-width) {
+  .paper-list{
+    .paper-list-wrapper {
+      width: 100%;
+      .paper-left {
+        float: none;
+        width: auto;
+        background-color: #fff;
+        margin:0;
+        overflow: hidden;
+        .list-cent{
+          width: 100%;
+          float: none;
+          .list-center{
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}

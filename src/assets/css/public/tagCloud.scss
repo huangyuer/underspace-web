@@ -1,0 +1,10 @@
+@import "../global";
+
+#tagCloud {
+  min-height: 300px;
+  &:before {
+    font-size: 5em;
+    color: #ddd;
+    position: relative;
+  }
+}

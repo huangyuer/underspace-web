@@ -1,0 +1,76 @@
+@import '../global';
+
+.search-all {
+  display: inline-block;
+  vertical-align: top;
+  width: 701px;
+  margin-left: 21px;
+  margin-right: 20px;
+  font-size: 16px;
+  background-color: white;
+  .m-top-21 {
+    margin-bottom: 21px;
+  }
+  .title {
+    height: 40px;
+    line-height: 40px;
+    font-size: 12px;
+    span > span {
+      color: $orange-color;
+    }
+  }
+  .subtitle {
+    height: 40px;
+    line-height: 40px;
+    background-color: $primary-color;
+    .inner {
+      color: #FFFFFF;
+      font-size: 14px;
+      font-weight: lighter;
+      margin-left: 37px;
+      margin-right: 47px;
+      .right {
+        font-size: 12px;
+        display: inline-block;
+        float: right;
+        height: 100%;
+        width: 65px;
+        cursor: pointer;
+        user-select: none;
+      }
+    }
+  }
+  .row {
+    width: 90%;
+    margin: 30px auto 0;
+    overflow: hidden;
+    position: relative;
+    & > .image-item:nth-child(1) {
+      float: left;
+    }
+    & > .image-item:nth-child(3) {
+      float: right;
+    }
+    & > .image-item:nth-child(2) {
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  .inners {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width: $max-width) {
+  .search-all {
+    width: 100%;
+    margin: 0;
+    .row {
+      margin: 10px auto;
+    }
+  }
+}
